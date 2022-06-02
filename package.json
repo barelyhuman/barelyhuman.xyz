@@ -1,0 +1,13 @@
+{
+  "name": "root-app",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start":"node .output/index.mjs",
+    "dev":"npx nitropack dev .",
+    "build":"npx nitropack build ."
+  },
+  "devDependencies": {
+    "nitropack": "^0.4.4"
+  }
+}
