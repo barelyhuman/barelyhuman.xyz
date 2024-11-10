@@ -1,0 +1,52 @@
+[
+  {
+    "name": "music",
+    "link": "http://music.barelyhuman.xyz",
+    "description": "simple music player for steam based browsers"
+  },
+  {
+    "name": "goblin",
+    "link": "http://goblin.run",
+    "description": "Distribute go binaries for all platforms"
+  },
+  {
+    "name": "typer",
+    "link": "http://typer.barelyhuman.dev",
+    "description": "Typing Warmup "
+  },
+  {
+    "name": "og",
+    "link": "https://og.barelyhuman.xyz/",
+    "description": "Tiny Open Graph Service"
+  },
+  {
+    "name": "hits",
+    "link": "https://hits.barelyhuman.xyz/",
+    "description": "Tiny hit counters service"
+  },
+  {
+    "name": "JSRepl",
+    "link": "https://jsrepl.barelyhuman.dev",
+    "description": "Javascript REPL built on the deno runtime"
+  },
+  {
+    "name": "ping",
+    "link": "https://ping.barelyhuman.dev/",
+    "description": "A free uptime micro service"
+  },
+  {
+    "name": "news",
+    "link": "https://news.barelyhuman.xyz/",
+    "description": "A hacker news client built by mvllow",
+    "replacements": {
+      "author": {
+        "type": "link",
+        "at": {
+          "start": 38,
+          "end": 43
+        },
+        "value": "http://mellow.dev"
+      }
+    }
+  }
+]

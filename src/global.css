@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-height: 72px;
+}
+
+body {
+  @apply bg-zinc-950 text-white;
+}
+
+.segment-dividers:not(:last-child) {
+  @apply border-b border-b-zinc-900;
+}
