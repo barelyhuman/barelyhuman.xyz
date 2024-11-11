@@ -69,7 +69,7 @@ function prepare(instance) {
     prefix: '/assets/',
     decorateReply: false,
     allowedPath: (path, root, request) => {
-      if (path.endsWith('.css')) {
+      if (['.css', '.woff', '.woff2'].some(d => path.endsWith(d))) {
         return true
       }
       return false

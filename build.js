@@ -34,11 +34,10 @@ const ctxAPI = {
   bundle: true,
   loader: {
     '.js': 'jsx',
+    '.woff2': 'copy',
+    '.woff': 'copy',
   },
-  plugins: [
-    nodeExternalsPlugin(),
-    islandPlugin(),
-  ],
+  plugins: [nodeExternalsPlugin(), islandPlugin()],
 }
 
 const pcssFiles = [
@@ -107,6 +106,7 @@ function islandPlugin() {
     name: 'preact-islands',
     setup(builder) {
       builder.onEnd(async () => {
+        const pathToIslands = join('.generated', 'islands')
         Object.keys(clientsToGenerate).forEach(file => {
           const islandKeys = Object.keys(clientsToGenerate[file])
           if (islandKeys.length === 0) return
@@ -120,6 +120,13 @@ function islandPlugin() {
             fs.writeFileSync(creationPath, template, 'utf8')
           })
         })
+
+        const hasIslands = await fs.promises
+          .access(pathToIslands)
+          .then(_ => true)
+          .catch(_ => false)
+
+        if (!hasIslands) return
 
         const output = await builder.esbuild.build({
           entryPoints: await glob('.generated/islands/**/*.js', {

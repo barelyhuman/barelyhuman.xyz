@@ -14,17 +14,17 @@
   "dependencies": {
     "@dumbjs/preland": "0.0.2",
     "@fastify/static": "^8.0.2",
-    "@iconify-json/ph": "^1.2.1",
     "fastify": "^5.1.0",
     "fastify-plugin": "^5.0.1",
     "pino-pretty": "^11.3.0",
-    "postcss": "^8.4.47",
     "preact": "^10.24.3",
-    "preact-render-to-string": "^6.5.11",
-    "unplugin-icons": "^0.20.1"
+    "preact-render-to-string": "^6.5.11"
   },
   "devDependencies": {
     "@barelyhuman/prettier-config": "^2.0.2",
+    "@fontsource/inter": "^5.1.0",
+    "@iconify-json/ph": "^1.2.1",
+    "@iconify/tailwind": "^1.1.3",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
     "@types/node": "^20",
@@ -33,9 +33,9 @@
     "esbuild": "^0.24.0",
     "esbuild-node-externals": "^1.15.0",
     "esbuild-postcss": "^0.0.4",
-    "iconify-icon": "^2.1.0",
     "nodemon": "^3.1.7",
     "open-props": "^1.7.7",
+    "postcss": "^8.4.47",
     "prettier": "^3.3.3",
     "tailwindcss": "^3.4.14",
     "tiny-glob": "^0.2.9"
