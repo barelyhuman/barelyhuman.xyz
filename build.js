@@ -84,6 +84,16 @@ async function main() {
       ext: 'css, js',
       exec: process.execPath,
     })
+
+    process.on('SIGINT', () => {
+      console.log('Closing...')
+      ctx
+        .dispose()
+        .then(_ => {
+          process.exit(0)
+        })
+        .catch(_ => process.exit(1))
+    })
   } else {
     await ctx.dispose()
   }
