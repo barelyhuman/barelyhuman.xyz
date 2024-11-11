@@ -18,7 +18,8 @@
     "fastify-plugin": "^5.0.1",
     "pino-pretty": "^11.3.0",
     "preact": "^10.24.3",
-    "preact-render-to-string": "^6.5.11"
+    "preact-render-to-string": "^6.5.11",
+    "tiny-glob": "^0.2.9"
   },
   "devDependencies": {
     "@barelyhuman/prettier-config": "^2.0.2",
@@ -37,8 +38,7 @@
     "open-props": "^1.7.7",
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
-    "tailwindcss": "^3.4.14",
-    "tiny-glob": "^0.2.9"
+    "tailwindcss": "^3.4.14"
   },
   "packageManager": "yarn@4.5.1"
 }
